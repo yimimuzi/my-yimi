@@ -18,26 +18,51 @@ features:
 ---
 
 <style>
-/* 🪄 极限清空文字部分的上下留白 */
+/* 🎯 1. 强行锁定全屏，禁止页面出现上下滚动条 */
+html, body, #root, .rspress-theme {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+/* 🎯 2. 把官方死板的“撑满全屏”容器彻底打碎，高度改为自动 */
 .rspress-home-hero {
-  padding-top: 20px !important;    /* 极度压缩顶部留白 */
-  padding-bottom: 0px !important;   /* 彻底清除底部留白 */
+  min-height: auto !important; 
+  padding-top: 40px !important;    /* 调整文字距离顶部的距离 */
+  padding-bottom: 0px !important;  
 }
 
-/* 🪄 强力消除中间的空隙 */
+/* 🎯 3. 彻底清除文字区域原本自带的巨大底部外边距 */
 .rspress-home-hero-wrapper {
-  padding-bottom: 0px !important;   /* 清除文字外壳的底部防线 */
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 
+/* 🎯 4. 精准控制三个方框的定位，整体大幅度往上提 */
 .rspress-home-features {
-  padding-top: 0px !important;  
-  margin-top: -300px !important;   /* 将负边距从 -100px 强力拉大到 -150px */
+  padding-top: 15px !important;  
+  padding-bottom: 15px !important;
+  margin-top: 0px !important;     /* 归零负边距，防止页面穿帮下移 */
 }
 
-/* 适配手机等移动端，防止拉得太近导致重叠 */
+/* 🎯 5. 让整个首页内容在导航栏下方垂直居中紧凑对齐 */
+.rspress-home-layout {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important; /* 让文字和三个框整体在屏幕中心聚拢 */
+  align-items: center !important;
+  height: calc(100vh - 64px) !important; /* 动态减去顶部导航栏高度 */
+  gap: 10px !important; /* 💡 核心：这行直接控制“上方文字”与“下方三个框”的真实空隙，10px 极其紧凑 */
+}
+
+/* 📱 手机端微调，防止手机屏幕太小装不下内容 */
 @media (max-width: 768px) {
-  .rspress-home-features {
-    margin-top: -70px !important;
+  html, body {
+    overflow: auto !important; /* 手机端由于文字会自动折行，允许其自然滚动防重叠 */
+    height: auto !important;
+  }
+  .rspress-home-layout {
+    height: auto !important;
+    gap: 20px !important;
   }
 }
 </style>
