@@ -31,7 +31,7 @@ features:
 
 .rspress-home-features {
   padding-top: 0px !important;  
-  margin-top: -200px !important;   /* 将负边距从 -100px 强力拉大到 -150px */
+  margin-top: -300px !important;   /* 将负边距从 -100px 强力拉大到 -150px */
 }
 
 /* 适配手机等移动端，防止拉得太近导致重叠 */
