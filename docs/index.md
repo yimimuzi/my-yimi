@@ -4,9 +4,10 @@ pageType: home
 hero:
   name: 一米生态 | Goyimi.com
   tagline: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
+
 features:
   - title: 一米传媒（全域数字新媒体旗舰）
-    details: 全国领先的直播经纪 company 与 MCN 服务机构。深度聚焦直播、MCN、电商、游戏、品牌服务五大核心赛道，全面打通抖音、快手、微信视频号、腾讯 NOW 等一线头部新媒体平台，构建起庞大的公私域流量闭环与全域商业变现矩阵。
+    details: 全国领先的直播经纪 company 与 MCN 服务机构。深度聚焦直播、MCN、电商、游戏、品牌服务五大核心赛道，全面打通抖音、快手、微信视频号、腾讯 NOW 等一线头部新媒体平台，构建起庞大的公私域流量闭环与全域商业变现矩阵.
     icon: 🚀
   - title: 一米农场（数字化涉农创新生态）
     details: 立足于四川大凉山得天独厚的光热气候与纯净原生态资源，开创全新的一对一精准认养模式。提供高品质蔬菜、时令水果、高原家禽及橄榄油的一对一单式专属认养，让大凉山的绿色有机农业方便快捷地走进千家万户。
@@ -17,15 +18,22 @@ features:
 ---
 
 <style>
-/* 🪄 进一步缩减留白，让卡片框有力地紧贴上方文字区域 */
+/* 🪄 极限缩减上部文字区域的四周留白 */
 .rspress-home-hero {
-  padding-bottom: 0px !important;
+  padding-top: 40px !important;    /* 稍微收紧顶部留白 */
+  padding-bottom: 0px !important;   /* 彻底清除底部留白 */
 }
-.rspress-home-hero-actions {
-  margin-bottom: 10px !important; 
-}
+
+/* 🪄 极限拉近下方三个卡片框的距离 */
 .rspress-home-features {
   padding-top: 0px !important;  
-  margin-top: -45px !important; /* 加大了负边距，往上提得更多 */
+  margin-top: -100px !important;   /* 从 -45px 强力提升至 -100px，让整体比例更紧凑好看 */
+}
+
+/* 适配手机等移动端的排版比例，防止拉得太近导致重叠 */
+@media (max-width: 768px) {
+  .rspress-home-features {
+    margin-top: -60px !important;
+  }
 }
 </style>
