@@ -2,7 +2,7 @@
 pageType: home
 
 hero:
-  name: 一米生态｜Goyimi.com
+  name: 一米生态 | Goyimi.com
   text: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
   tagline: 将温暖与便捷深度延展至用户生活的每一个微观市场与角落
   actions:
@@ -19,8 +19,8 @@ features:
     icon: 🚀
   - title: 一米农场
     details: 数字化涉农创新生态
-    icon: 📦
+    icon: 🧑‍🌾
   - title: 一米新能源
     details: 绿色科技与智慧出行
-    icon: 🔍
+    icon: ⚡
 ---
