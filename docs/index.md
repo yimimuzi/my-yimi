@@ -3,13 +3,9 @@ pageType: home
 
 hero:
   name: 一米生态 | Goyimi.com
-  text: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
-  tagline: 将温暖与便捷深度延展至用户生活的每一个微观市场与角落
+
+  tagline: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
   actions:
-    # 💡 这里只保留了一个“官方网站”按钮，删除了另一个
-    - theme: brand
-      text: 官方网站
-      link: https://goyimi.com/
 
 features:
   - title: 一米传媒（全域数字新媒体旗舰）
