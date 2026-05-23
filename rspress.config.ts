@@ -3,8 +3,8 @@ import path from 'path';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: '一米站点',
-  description: '基于 Rspress 搭建的现代静态站点',
+  title: '一米生态｜Goyimi.com',
+  description: '一米距离，无限生态 —— 让服务与科技，近在咫尺。',
   icon: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/uhp_hq7vwp/rspress/rspress-logo.png',
   themeConfig: {
     nav: [
