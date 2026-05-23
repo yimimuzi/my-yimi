@@ -3,7 +3,7 @@ pageType: home
 
 hero:
   name: 一米生态 | Goyimi.com
-  tagline: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
+  tagline: 一米距离,无限生态 —— 让服务与科技近在咫尺。
 
 features:
   - title: 一米传媒
