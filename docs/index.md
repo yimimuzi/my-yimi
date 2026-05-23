@@ -3,9 +3,12 @@ pageType: home
 
 hero:
   name: 一米生态 | Goyimi.com
-
-  tagline: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
+  text: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
+  tagline: 将温暖与便捷深度延展至用户生活的每一个微观市场与角落
   actions:
+    - theme: brand
+      text: 官方网站
+      link: https://goyimi.com/
 
 features:
   - title: 一米传媒（全域数字新媒体旗舰）
@@ -13,18 +16,22 @@ features:
     icon: 🚀
   - title: 一米农场（数字化涉农创新生态）
     details: 立足于四川大凉山得天独厚的光热气候与纯净原生态资源，开创全新的一对一精准认养模式。提供高品质蔬菜、时令水果、高原家禽及橄榄油的一对一单式专属认养，让大凉山的绿色有机农业方便快捷地走进千家万户。
-    icon: 🧑‍🌾
+    icon: 🌾
   - title: 一米新能源（绿色科技与智慧出行）
     details: 全场景电动汽车（EV）智慧充电解决方案服务商。以“智慧充电，无处不在”为使命，专注于为小区、酒店、写字楼及公共停车场等目的地提供定制化的充电桩安装与智能运营服务，确保电动汽车用户在任何场景下都能轻松补能。
     icon: ⚡
 ---
 
 <style>
-/* 🪄 这段魔法代码用来强行把下面三个框往上提，拉近和上面文字的距离 */
+/* 🪄 进一步缩减留白，让卡片框有力地紧贴上方文字区域 */
 .rspress-home-hero {
-  padding-bottom: 0px !important; /* 缩减上半部分的底部间距 */
+  padding-bottom: 0px !important;
+}
+.rspress-home-hero-actions {
+  margin-bottom: 10px !important; 
 }
 .rspress-home-features {
-  padding-top: 10px !important;  /* 缩减卡片顶部的间距 */
+  padding-top: 0px !important;  
+  margin-top: -45px !important; /* 加大了负边距，往上提得更多 */
 }
 </style>
