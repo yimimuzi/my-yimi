@@ -2,25 +2,25 @@
 pageType: home
 
 hero:
-  name: 一米生态
-  text: 基于 Rspress 的极速静态站点生成器
-  tagline: 现代、快如闪电的文档框架
+  name: 一米生态｜Goyimi.com
+  text: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
+  tagline: 将温暖与便捷深度延展至用户生活的每一个微观市场与角落
   actions:
     - theme: brand
-      text: 快速开始
-      link: /guide/getting-started
+      text: 一米生态
+      link: https://goyimi.com/
     - theme: alt
       text: 官方网站
-      link: https://rspress.dev/
+      link: https://goyimi.com/
 
 features:
-  - title: 极速的构建
-    details: 基于 Rust 构建工具，带给你飞一般的编译体验。
+  - title: 一米传媒
+    details: 全域数字新媒体旗舰
     icon: 🚀
-  - title: MDX 支持
-    details: 可以在 Markdown 中直接使用 React 组件，表现力极强。
+  - title: 一米农场
+    details: 数字化涉农创新生态
     icon: 📦
-  - title: 全文搜索
-    details: 内置轻量级全文搜索，开箱即用。
+  - title: 一米新能源
+    details: 绿色科技与智慧出行
     icon: 🔍
 ---
