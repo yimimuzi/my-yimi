@@ -3,13 +3,7 @@ pageType: home
 
 hero:
   name: 一米生态 | Goyimi.com
-  text: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
-  tagline: 将温暖与便捷深度延展至用户生活的每一个微观市场与角落
-  actions:
-    - theme: brand
-      text: 官方网站
-      link: https://goyimi.com/
-
+  tagline: 一米距离，无限生态 —— 让服务与科技，近在咫尺。
 features:
   - title: 一米传媒（全域数字新媒体旗舰）
     details: 全国领先的直播经纪 company 与 MCN 服务机构。深度聚焦直播、MCN、电商、游戏、品牌服务五大核心赛道，全面打通抖音、快手、微信视频号、腾讯 NOW 等一线头部新媒体平台，构建起庞大的公私域流量闭环与全域商业变现矩阵。
