@@ -1,0 +1,12 @@
+{
+  "name": "my-yimi",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "rspress": "latest"
+  }
+}
