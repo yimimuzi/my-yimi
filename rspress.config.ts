@@ -13,8 +13,7 @@ export default defineConfig({
     search: false,
 
     nav: [
-      { text: '首页', link: '/' },
-      { text: '业务', link: '/guide/getting-started' }
+      { text: '首页', link: '/' }
     ],
     sidebar: {
       '/guide/': [
