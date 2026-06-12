@@ -24,10 +24,21 @@ html, body, #root, .rspress-theme {
   height: 100vh !important;
 }
 
-/* 🎯 2. 把官方死板的"撑满全屏"容器彻底打碎，高度改为自动 */
+/* 🎯 2. 压缩标题和副标题的尺寸与间距 */
+.rspress-home-hero h1 {
+  margin: 0 !important;
+  font-size: 1.8rem !important;
+  line-height: 1.2 !important;
+}
+.rspress-home-hero p {
+  margin: 2px 0 0 0 !important;
+  font-size: 0.95rem !important;
+  opacity: 0.7;
+}
+
 .rspress-home-hero {
   min-height: auto !important; 
-  padding-top: 10px !important;    /* 大幅缩小顶部距离，整体上移 */
+  padding-top: 0px !important;
   padding-bottom: 0px !important;  
 }
 
@@ -39,8 +50,8 @@ html, body, #root, .rspress-theme {
 
 /* 🎯 4. 精准控制三个方框的定位，整体大幅度往上提 */
 .rspress-home-features {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   margin-top: 0px !important;
 }
 
@@ -48,11 +59,11 @@ html, body, #root, .rspress-theme {
 .rspress-home-layout {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-start !important; /* 内容靠上对齐，把三个框往上提 */
+  justify-content: flex-start !important;
   align-items: center !important;
   height: calc(100vh - 64px) !important;
-  padding-top: 1vh !important; /* 给顶部留最小呼吸空间 */
-  gap: 4px !important; /* 文字与三个框之间极致紧凑 */
+  padding-top: 6px !important;
+  gap: 0px !important;
 }
 
 /* 📱 手机端微调 */
