@@ -24,10 +24,10 @@ html, body, #root, .rspress-theme {
   height: 100vh !important;
 }
 
-/* 🎯 2. 把官方死板的“撑满全屏”容器彻底打碎，高度改为自动 */
+/* 🎯 2. 把官方死板的"撑满全屏"容器彻底打碎，高度改为自动 */
 .rspress-home-hero {
   min-height: auto !important; 
-  padding-top: 40px !important;    /* 调整文字距离顶部的距离 */
+  padding-top: 10px !important;    /* 大幅缩小顶部距离，整体上移 */
   padding-bottom: 0px !important;  
 }
 
@@ -39,25 +39,26 @@ html, body, #root, .rspress-theme {
 
 /* 🎯 4. 精准控制三个方框的定位，整体大幅度往上提 */
 .rspress-home-features {
-  padding-top: 15px !important;  
-  padding-bottom: 15px !important;
-  margin-top: 0px !important;     /* 归零负边距，防止页面穿帮下移 */
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  margin-top: 0px !important;
 }
 
-/* 🎯 5. 让整个首页内容在导航栏下方垂直居中紧凑对齐 */
+/* 🎯 5. 让整个首页内容在导航栏下方靠上紧凑对齐 */
 .rspress-home-layout {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important; /* 让文字和三个框整体在屏幕中心聚拢 */
+  justify-content: flex-start !important; /* 内容靠上对齐，把三个框往上提 */
   align-items: center !important;
-  height: calc(100vh - 64px) !important; /* 动态减去顶部导航栏高度 */
-  gap: 10px !important; /* 💡 核心：这行直接控制“上方文字”与“下方三个框”的真实空隙，10px 极其紧凑 */
+  height: calc(100vh - 64px) !important;
+  padding-top: 1vh !important; /* 给顶部留最小呼吸空间 */
+  gap: 4px !important; /* 文字与三个框之间极致紧凑 */
 }
 
-/* 📱 手机端微调，防止手机屏幕太小装不下内容 */
+/* 📱 手机端微调 */
 @media (max-width: 768px) {
   html, body {
-    overflow: auto !important; /* 手机端由于文字会自动折行，允许其自然滚动防重叠 */
+    overflow: auto !important;
     height: auto !important;
   }
   .rspress-home-layout {
