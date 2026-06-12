@@ -13,59 +13,70 @@ features:
     details: 立足于四川大凉山得天独厚的光热气候与纯净原生态资源，开创全新的一对一精准认养模式。提供高品质蔬菜、时令水果、高原家禽及橄榄油的一对一单式专属认养，让大凉山的绿色有机农业方便快捷地走进千家万户。
     icon: 🌾
   - title: 一米新能源
-    details: 全场景电动汽车（EV）智慧充电解决方案服务商。以“智慧充电，无处不在”为使命，专注于为小区、酒店、写字楼及公共停车场等目的地提供定制化的充电桩安装与智能运营服务，确保电动汽车用户在任何场景下都能轻松补能。
+    details: 全场景电动汽车（EV）智慧充电解决方案服务商。以"智慧充电，无处不在"为使命，专注于为小区、酒店、写字楼及公共停车场等目的地提供定制化的充电桩安装与智能运营服务，确保电动汽车用户在任何场景下都能轻松补能。
     icon: ⚡
 ---
+
 <style>
-/* 🎯 1. 强行锁定全屏，禁止页面出现上下滚动条 */
 html, body, #root, .rspress-theme {
   overflow: hidden !important;
   height: 100vh !important;
 }
 
-/* 🎯 2. 压缩标题和副标题的尺寸与间距 */
-.rspress-home-hero h1 {
-  margin: 0 !important;
-  font-size: 1.8rem !important;
-  line-height: 1.2 !important;
-}
-.rspress-home-hero p {
-  margin: 2px 0 0 0 !important;
-  font-size: 0.95rem !important;
-  opacity: 0.7;
-}
-
+/* hero 容器 */
 .rspress-home-hero {
   min-height: auto !important; 
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;  
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;  
 }
 
-/* 🎯 3. 彻底清除文字区域原本自带的巨大底部外边距 */
+/* hero 标题 —— 原默认 text-6xl(3.75rem)，大幅缩小 */
+.rspress-home-hero-text {
+  font-size: 1.6rem !important;
+  line-height: 1.2 !important;
+  padding-bottom: 0 !important;
+}
+
+/* hero 副标题 —— 原默认 pt-4(16px)，收缩间距和字号 */
+.rspress-home-hero-tagline {
+  font-size: 0.9rem !important;
+  padding-top: 4px !important;
+  line-height: 1.3 !important;
+}
+
 .rspress-home-hero-wrapper {
-  padding-bottom: 0px !important;
-  margin-bottom: 0px !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-/* 🎯 4. 精准控制三个方框的定位，整体大幅度往上提 */
+/* 三个卡片区域 */
 .rspress-home-features {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
-  margin-top: 0px !important;
+  margin-top: 0 !important;
 }
 
-/* 🎯 5. 让整个首页内容在导航栏下方靠上紧凑对齐 */
+/* 每个卡片内部 padding 从 p-8(32px) 压到 12px */
+.rspress-home-feature-card {
+  padding: 12px 16px !important;
+}
+
+/* 卡片标题和详情间距收缩 */
+.rspress-home-feature-detail {
+  padding-top: 4px !important;
+}
+
+/* 整体布局靠上 */
 .rspress-home-layout {
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important;
   align-items: center !important;
   height: calc(100vh - 64px) !important;
-  padding-top: 6px !important;
-  gap: 0px !important;
+  padding-top: 4px !important;
+  gap: 0 !important;
 }
 
-/* 📱 手机端微调 */
 @media (max-width: 768px) {
   html, body {
     overflow: auto !important;
